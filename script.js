@@ -19,7 +19,7 @@ async function renderAdvice() {
   const res = await getAdvice();
   const { id, advice } = res;
 
-  const adviceId = document.createElement("h2");
+  const adviceId = document.createElement("h1");
   adviceId.id = "advice-id";
   adviceId.innerText = `Advice #${id}`;
 
