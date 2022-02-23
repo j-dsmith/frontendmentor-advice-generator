@@ -1,7 +1,7 @@
 const main = document.querySelector("main");
 const adviceCard = document.getElementById("advice-card");
 
-const divider = document.getElementById("divider");
+const divider = document.createElement("img");
 
 if (screen.width >= 1920) {
   divider.src = "./images/pattern-divider-desktop.svg";
