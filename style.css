@@ -1,0 +1,65 @@
+:root {
+  --color-dark-grayish-blue: hsl(217, 19%, 24%);
+  --color-grayish-blue: hsl(217, 19%, 38%);
+  --color-light-cyan: hsl(193, 38%, 86%);
+  --color-neon-green: hsl(150, 100%, 66%);
+  --font-size: 28px;
+}
+
+body {
+  background-color: hsl(223, 18%, 15%);
+  color: var(--color-light-cyan);
+  font-family: "Manrope";
+  font-weight: 800;
+  margin: 1rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+#advice-id {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-neon-green);
+  text-transform: uppercase;
+  letter-spacing: 0.5ch;
+  font-weight: 800;
+}
+
+#advice-card {
+  background-color: var(--color-dark-grayish-blue);
+  padding-inline: 2rem;
+  border-radius: 0.5rem;
+  font-size: var(--font-size);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+  max-width: 40rem;
+}
+
+#advice-text {
+  text-align: center;
+}
+
+#shuffle-btn {
+  margin-top: 2rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-neon-green);
+  position: absolute;
+  bottom: -2rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+#shuffle-btn:hover {
+  filter: drop-shadow(0 0 0.75rem var(--color-neon-green));
+}
