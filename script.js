@@ -1,6 +1,16 @@
 const main = document.querySelector("main");
 const adviceCard = document.getElementById("advice-card");
 
+const divider = document.getElementById("divider");
+
+if (screen.width >= 1920) {
+  divider.src = "./images/pattern-divider-desktop.svg";
+} else {
+  divider.src = "./images/pattern-divider-mobile.svg";
+}
+
+adviceCard.append(divider);
+
 async function getAdvice() {
   const response = await axios.get("https://api.adviceslip.com/advice");
 
