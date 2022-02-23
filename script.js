@@ -1,6 +1,5 @@
 const main = document.querySelector("main");
-const adviceCard = document.createElement("div");
-adviceCard.id = "advice-card";
+const adviceCard = document.getElementById("advice-card");
 
 async function getAdvice() {
   const response = await axios.get("https://api.adviceslip.com/advice");
@@ -41,6 +40,7 @@ async function renderAdvice() {
   const diceIcon = document.createElement("img");
   diceIcon.src = "./images/icon-dice.svg";
 
+  adviceCard.innerHTML = "";
   adviceCard.prepend(adviceId);
   adviceCard.append(adviceText);
   adviceCard.append(divider);
