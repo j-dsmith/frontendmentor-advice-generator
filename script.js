@@ -1,3 +1,4 @@
+const main = document.querySelector("main");
 const adviceCard = document.createElement("div");
 adviceCard.id = "advice-card";
 
@@ -45,7 +46,7 @@ async function renderAdvice() {
   adviceCard.append(divider);
   adviceCard.append(shuffleBtn);
   shuffleBtn.append(diceIcon);
-  document.body.append(adviceCard);
+  main.append(adviceCard);
 }
 
 renderAdvice();
